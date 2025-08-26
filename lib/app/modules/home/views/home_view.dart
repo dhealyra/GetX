@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:getx/app/modules/pendaftaran/views/pendaftaran_view.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -27,7 +28,11 @@ class HomeView extends GetView<HomeController> {
             ElevatedButton(
               onPressed: () => Get.toNamed('/counter'),
               child: Text('Go to counter'),
-            )
+            ),
+            InkWell(
+              onTap: () => Get.to(() => PendaftaranView()),
+              child: Text('Form'),
+            ),
           ],
         ),
       ),

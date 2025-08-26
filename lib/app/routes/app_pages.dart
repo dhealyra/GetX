@@ -4,6 +4,8 @@ import '../modules/counter/bindings/counter_binding.dart';
 import '../modules/counter/views/counter_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
+import '../modules/pendaftaran/bindings/pendaftaran_binding.dart';
+import '../modules/pendaftaran/views/pendaftaran_view.dart';
 
 part 'app_routes.dart';
 
@@ -22,6 +24,11 @@ class AppPages {
       name: _Paths.COUNTER,
       page: () => const CounterView(),
       binding: CounterBinding(),
+    ),
+    GetPage(
+      name: _Paths.PENDAFTARAN,
+      page: () => const PendaftaranView(),
+      binding: PendaftaranBinding(),
     ),
   ];
 }
