@@ -6,6 +6,8 @@ abstract class Routes {
   static const HOME = _Paths.HOME;
   static const COUNTER = _Paths.COUNTER;
   static const PENDAFTARAN = _Paths.PENDAFTARAN;
+  static const POST = _Paths.POST;
+  static const QURAN = _Paths.QURAN;
 }
 
 abstract class _Paths {
@@ -13,4 +15,6 @@ abstract class _Paths {
   static const HOME = '/home';
   static const COUNTER = '/counter';
   static const PENDAFTARAN = '/pendaftaran';
+  static const POST = '/post';
+  static const QURAN = '/quran';
 }

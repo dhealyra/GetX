@@ -6,6 +6,10 @@ import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/pendaftaran/bindings/pendaftaran_binding.dart';
 import '../modules/pendaftaran/views/pendaftaran_view.dart';
+import '../modules/post/bindings/post_binding.dart';
+import '../modules/post/views/post_view.dart';
+import '../modules/quran/bindings/quran_binding.dart';
+import '../modules/quran/views/quran_view.dart';
 
 part 'app_routes.dart';
 
@@ -29,6 +33,16 @@ class AppPages {
       name: _Paths.PENDAFTARAN,
       page: () => const PendaftaranView(),
       binding: PendaftaranBinding(),
+    ),
+    GetPage(
+      name: _Paths.POST,
+      page: () => PostView(),
+      binding: PostBinding(),
+    ),
+    GetPage(
+      name: _Paths.QURAN,
+      page: () => QuranView(),
+      binding: QuranBinding(),
     ),
   ];
 }
